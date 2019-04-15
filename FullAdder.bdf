@@ -353,10 +353,6 @@ applicable agreement for further details.
 	(pt 376 280)
 	(pt 432 280)
 )
-(connector
-	(pt 192 -16)
-	(pt 192 -8)
-)
 (junction (pt 376 104))
 (junction (pt 512 96))
 (junction (pt 520 120))
