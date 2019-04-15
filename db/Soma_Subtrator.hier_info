@@ -1,0 +1,80 @@
+|Comparador_Menor_que
+output <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => Comparador_Igual:inst1.A[0]
+A[0] => Comparador_Maior_que:inst.A[0]
+A[1] => Comparador_Igual:inst1.A[1]
+A[1] => Comparador_Maior_que:inst.A[1]
+A[2] => Comparador_Igual:inst1.A[2]
+A[2] => Comparador_Maior_que:inst.A[2]
+A[3] => Comparador_Igual:inst1.A[3]
+A[3] => Comparador_Maior_que:inst.A[3]
+B[0] => Comparador_Igual:inst1.B[0]
+B[0] => Comparador_Maior_que:inst.B[0]
+B[1] => Comparador_Igual:inst1.B[1]
+B[1] => Comparador_Maior_que:inst.B[1]
+B[2] => Comparador_Igual:inst1.B[2]
+B[2] => Comparador_Maior_que:inst.B[2]
+B[3] => Comparador_Igual:inst1.B[3]
+B[3] => Comparador_Maior_que:inst.B[3]
+
+
+|Comparador_Menor_que|Comparador_Igual:inst1
+output <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[1] => inst2.IN0
+A[2] => inst1.IN0
+A[3] => inst3.IN0
+B[0] => inst.IN1
+B[1] => inst2.IN1
+B[2] => inst1.IN1
+B[3] => inst3.IN1
+
+
+|Comparador_Menor_que|Comparador_Maior_que:inst
+Output <= Comparador_Mais:inst.Output
+A[0] => Comparador_Menos:inst3.A
+A[1] => Comparador_Menos:inst2.A
+A[2] => Comparador_Menos:inst1.A
+A[3] => Comparador_Mais:inst.A
+B[0] => Comparador_Menos:inst3.B
+B[1] => Comparador_Menos:inst2.B
+B[2] => Comparador_Menos:inst1.B
+B[3] => Comparador_Mais:inst.B
+
+
+|Comparador_Menor_que|Comparador_Maior_que:inst|Comparador_Mais:inst
+Output <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+B => inst4.IN1
+B => inst5.IN1
+Cin => inst5.IN0
+Cin => inst3.IN1
+
+
+|Comparador_Menor_que|Comparador_Maior_que:inst|Comparador_Menos:inst1
+Output <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst3.IN0
+B => inst.IN0
+Cin => inst5.IN0
+Cin => inst3.IN1
+
+
+|Comparador_Menor_que|Comparador_Maior_que:inst|Comparador_Menos:inst2
+Output <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst3.IN0
+B => inst.IN0
+Cin => inst5.IN0
+Cin => inst3.IN1
+
+
+|Comparador_Menor_que|Comparador_Maior_que:inst|Comparador_Menos:inst3
+Output <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst3.IN0
+B => inst.IN0
+Cin => inst5.IN0
+Cin => inst3.IN1
+
+

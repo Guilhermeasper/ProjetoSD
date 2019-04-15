@@ -1,0 +1,125 @@
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Comparador_Mais
+# storage
+db|Soma_Subtrator.(0).cnf
+db|Soma_Subtrator.(0).cnf
+# case_insensitive
+# source_file
+comparador_mais.bdf
+2ed663cb3d38f2a633f6e82b77a5dbae
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador_Maior_que:inst|Comparador_Mais:inst
+}
+# macro_sequence
+
+# end
+# entity
+Comparador_Menos
+# storage
+db|Soma_Subtrator.(1).cnf
+db|Soma_Subtrator.(1).cnf
+# case_insensitive
+# source_file
+comparador_menos.bdf
+d2c7ed1ec782148ab9546a245931740
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador_Maior_que:inst|Comparador_Menos:inst1
+Comparador_Maior_que:inst|Comparador_Menos:inst2
+Comparador_Maior_que:inst|Comparador_Menos:inst3
+}
+# macro_sequence
+
+# end
+# entity
+Comparador_Maior_que
+# storage
+db|Soma_Subtrator.(2).cnf
+db|Soma_Subtrator.(2).cnf
+# case_insensitive
+# source_file
+comparador_maior_que.bdf
+b010a5ebebe8484d6f31eac3e360dc61
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador_Maior_que:inst
+}
+# macro_sequence
+
+# end
+# entity
+Comparador_Menor_que
+# storage
+db|Soma_Subtrator.(4).cnf
+db|Soma_Subtrator.(4).cnf
+# case_insensitive
+# source_file
+comparador_menor_que.bdf
+54517bdd44bd56806b94ebf2cbe828
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+Comparador_Igual
+# storage
+db|Soma_Subtrator.(3).cnf
+db|Soma_Subtrator.(3).cnf
+# case_insensitive
+# source_file
+comparador_igual.bdf
+d08cefbdddf663c5d05f30411f47ca70
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Comparador_Igual:inst1
+}
+# macro_sequence
+
+# end
+# complete
+
