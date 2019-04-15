@@ -33,9 +33,6 @@ comparador_mais.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Comparador_Maior_que:inst|Comparador_Mais:inst
-}
 # macro_sequence
 
 # end
@@ -52,11 +49,6 @@ d2c7ed1ec782148ab9546a245931740
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-Comparador_Maior_que:inst|Comparador_Menos:inst1
-Comparador_Maior_que:inst|Comparador_Menos:inst2
-Comparador_Maior_que:inst|Comparador_Menos:inst3
 }
 # macro_sequence
 
@@ -75,29 +67,6 @@ b010a5ebebe8484d6f31eac3e360dc61
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Comparador_Maior_que:inst
-}
-# macro_sequence
-
-# end
-# entity
-Comparador_Menor_que
-# storage
-db|Soma_Subtrator.(4).cnf
-db|Soma_Subtrator.(4).cnf
-# case_insensitive
-# source_file
-comparador_menor_que.bdf
-54517bdd44bd56806b94ebf2cbe828
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -115,8 +84,59 @@ d08cefbdddf663c5d05f30411f47ca70
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+Comparador_Menor_que
+# storage
+db|Soma_Subtrator.(4).cnf
+db|Soma_Subtrator.(4).cnf
+# case_insensitive
+# source_file
+comparador_menor_que.bdf
+95d7086404c52435070862cd745f8f6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Vector_AND
+# storage
+db|Soma_Subtrator.(5).cnf
+db|Soma_Subtrator.(5).cnf
+# case_insensitive
+# source_file
+vector_and.bdf
+13a4fdb27f71ab245fe7fa592fea670
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Vector_XOR
+# storage
+db|Soma_Subtrator.(6).cnf
+db|Soma_Subtrator.(6).cnf
+# case_insensitive
+# source_file
+vector_xor.bdf
+bc534f65a340779d89b6f86a8f81cf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-Comparador_Igual:inst1
+|
 }
 # macro_sequence
 

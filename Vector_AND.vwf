@@ -26,7 +26,7 @@ HEADER
 	TIME_UNIT = ns;
 	DATA_OFFSET = 0.0;
 	DATA_DURATION = 1000.0;
-	SIMULATION_TIME = 0.0;
+	SIMULATION_TIME = 1000.0;
 	GRID_PHASE = 0.0;
 	GRID_PERIOD = 10.0;
 	GRID_DUTY_CYCLE = 50;
@@ -307,7 +307,33 @@ TRANSITION_LIST("S[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 136.0;
+			NODE
+			{
+				REPEAT = 7;
+				LEVEL 1 FOR 8.0;
+				LEVEL 0 FOR 8.0;
+			}
+			LEVEL 1 FOR 8.0;
+		}
+		LEVEL 0 FOR 136.0;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 1 FOR 8.0;
+			LEVEL 0 FOR 8.0;
+		}
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 136.0;
+		NODE
+		{
+			REPEAT = 6;
+			LEVEL 1 FOR 8.0;
+			LEVEL 0 FOR 8.0;
+		}
 	}
 }
 
@@ -316,7 +342,34 @@ TRANSITION_LIST("S[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 6;
+			LEVEL 0 FOR 68.0;
+			NODE
+			{
+				REPEAT = 7;
+				LEVEL 1 FOR 4.0;
+				LEVEL 0 FOR 4.0;
+			}
+			LEVEL 1 FOR 4.0;
+		}
+		LEVEL 0 FOR 68.0;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 4.0;
+		}
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 68.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 4.0;
+		}
+		LEVEL 1 FOR 4.0;
 	}
 }
 
@@ -325,7 +378,30 @@ TRANSITION_LIST("S[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 14;
+			LEVEL 0 FOR 34.0;
+			NODE
+			{
+				REPEAT = 7;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 2.0;
+		}
+		LEVEL 0 FOR 34.0;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+		}
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 34.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
 	}
 }
 
@@ -334,7 +410,27 @@ TRANSITION_LIST("S[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL X FOR 1000.0;
+		NODE
+		{
+			REPEAT = 30;
+			LEVEL 0 FOR 17.0;
+			NODE
+			{
+				REPEAT = 7;
+				LEVEL 1 FOR 1.0;
+				LEVEL 0 FOR 1.0;
+			}
+			LEVEL 1 FOR 1.0;
+		}
+		LEVEL 0 FOR 17.0;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 1 FOR 1.0;
+			LEVEL 0 FOR 1.0;
+		}
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 8.0;
 	}
 }
 
