@@ -65,3 +65,4 @@ set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name VECTOR_WAVEFORM_FILE Vector_XOR.vwf
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Vector_XOR.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name BDF_FILE MUX.bdf
