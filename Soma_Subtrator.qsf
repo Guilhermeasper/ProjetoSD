@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Stratix II"
 set_global_assignment -name DEVICE AUTO
-set_global_assignment -name TOP_LEVEL_ENTITY Vector_XOR
+set_global_assignment -name TOP_LEVEL_ENTITY Somador_BCD
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:20:53  APRIL 08, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
@@ -58,11 +58,15 @@ set_global_assignment -name BDF_FILE Soma_Subtrator.bdf
 set_global_assignment -name BDF_FILE Vector_AND.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Vector_AND.vwf
 set_global_assignment -name BDF_FILE Vector_XOR.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Vector_XOR.vwf
+set_global_assignment -name BDF_FILE Binary_MUX.bdf
+set_global_assignment -name BDF_FILE IsOverflow.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE IsOverflow.vwf
+set_global_assignment -name BDF_FILE Somador_BCD.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
-set_global_assignment -name VECTOR_WAVEFORM_FILE Vector_XOR.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Vector_XOR.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Somador_BCD.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Somador_BCD.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name BDF_FILE MUX.bdf
