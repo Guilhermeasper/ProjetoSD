@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Soma_Subtrator
-Wed Apr 17 18:43:16 2019
-Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Mon Apr 29 16:26:35 2019
+Quartus II 64-Bit Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 
 
 ---------------------
@@ -37,25 +37,25 @@ applicable agreement for further details.
 
 
 
-+------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                 ;
-+-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Wed Apr 17 18:43:16 2019        ;
-; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
-; Revision Name                 ; Soma_Subtrator                               ;
-; Top-level Entity Name         ; Somador_BCD                                  ;
-; Family                        ; Stratix II                                   ;
-; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 2                                            ;
-;     Dedicated logic registers ; 0                                            ;
-; Total registers               ; 0                                            ;
-; Total pins                    ; 13                                           ;
-; Total virtual pins            ; 0                                            ;
-; Total block memory bits       ; 0                                            ;
-; DSP block 9-bit elements      ; 0                                            ;
-; Total PLLs                    ; 0                                            ;
-; Total DLLs                    ; 0                                            ;
-+-------------------------------+----------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++-------------------------------+-----------------------------------------------+
+; Analysis & Synthesis Status   ; Successful - Mon Apr 29 16:26:35 2019         ;
+; Quartus II 64-Bit Version     ; 9.1 Build 350 03/24/2010 SP 2 SJ Full Version ;
+; Revision Name                 ; Soma_Subtrator                                ;
+; Top-level Entity Name         ; Somador_BCD                                   ;
+; Family                        ; Stratix II                                    ;
+; Logic utilization             ; N/A                                           ;
+;     Combinational ALUTs       ; 11                                            ;
+;     Dedicated logic registers ; 0                                             ;
+; Total registers               ; 0                                             ;
+; Total pins                    ; 13                                            ;
+; Total virtual pins            ; 0                                             ;
+; Total block memory bits       ; 0                                             ;
+; DSP block 9-bit elements      ; 0                                             ;
+; Total PLLs                    ; 0                                             ;
+; Total DLLs                    ; 0                                             ;
++-------------------------------+-----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -155,55 +155,55 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                     ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------+
-; IsOverflow.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/Users/alpvj/Desktop/ProjetoSD/IsOverflow.bdf  ;
-; Somador_BCD.bdf                  ; yes             ; User Block Diagram/Schematic File        ; C:/Users/alpvj/Desktop/ProjetoSD/Somador_BCD.bdf ;
-; fulladder.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/alpvj/Desktop/ProjetoSD/fulladder.bdf   ;
-+----------------------------------+-----------------+------------------------------------------+--------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                          ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                    ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------+
+; IsOverflow.bdf                   ; yes             ; User Block Diagram/Schematic File        ; D:/Users/jvvm/Desktop/ProjetoSD/IsOverflow.bdf  ;
+; Somador_BCD.bdf                  ; yes             ; User Block Diagram/Schematic File        ; D:/Users/jvvm/Desktop/ProjetoSD/Somador_BCD.bdf ;
+; fulladder.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/jvvm/Desktop/ProjetoSD/fulladder.bdf   ;
++----------------------------------+-----------------+------------------------------------------+-------------------------------------------------+
 
 
-+--------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                              ;
-+-----------------------------------------------+--------------------------+
-; Resource                                      ; Usage                    ;
-+-----------------------------------------------+--------------------------+
-; Estimated ALUTs Used                          ; 2                        ;
-; Dedicated logic registers                     ; 0                        ;
-;                                               ;                          ;
-; Estimated ALUTs Unavailable                   ; 0                        ;
-;                                               ;                          ;
-; Total combinational functions                 ; 2                        ;
-; Combinational ALUT usage by number of inputs  ;                          ;
-;     -- 7 input functions                      ; 0                        ;
-;     -- 6 input functions                      ; 0                        ;
-;     -- 5 input functions                      ; 0                        ;
-;     -- 4 input functions                      ; 0                        ;
-;     -- <=3 input functions                    ; 2                        ;
-;                                               ;                          ;
-; Combinational ALUTs by mode                   ;                          ;
-;     -- normal mode                            ; 2                        ;
-;     -- extended LUT mode                      ; 0                        ;
-;     -- arithmetic mode                        ; 0                        ;
-;     -- shared arithmetic mode                 ; 0                        ;
-;                                               ;                          ;
-; Estimated ALUT/register pairs used            ; 2                        ;
-;                                               ;                          ;
-; Total registers                               ; 0                        ;
-;     -- Dedicated logic registers              ; 0                        ;
-;     -- I/O registers                          ; 0                        ;
-;                                               ;                          ;
-; Estimated ALMs:  partially or completely used ; 1                        ;
-;                                               ;                          ;
-; I/O pins                                      ; 13                       ;
-; Maximum fan-out node                          ; IsOverflow:inst3|inst5~0 ;
-; Maximum fan-out                               ; 2                        ;
-; Total fan-out                                 ; 7                        ;
-; Average fan-out                               ; 0.47                     ;
-+-----------------------------------------------+--------------------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++-----------------------------------------------+-------+
+; Resource                                      ; Usage ;
++-----------------------------------------------+-------+
+; Estimated ALUTs Used                          ; 11    ;
+; Dedicated logic registers                     ; 0     ;
+;                                               ;       ;
+; Estimated ALUTs Unavailable                   ; 2     ;
+;                                               ;       ;
+; Total combinational functions                 ; 11    ;
+; Combinational ALUT usage by number of inputs  ;       ;
+;     -- 7 input functions                      ; 0     ;
+;     -- 6 input functions                      ; 2     ;
+;     -- 5 input functions                      ; 2     ;
+;     -- 4 input functions                      ; 6     ;
+;     -- <=3 input functions                    ; 1     ;
+;                                               ;       ;
+; Combinational ALUTs by mode                   ;       ;
+;     -- normal mode                            ; 11    ;
+;     -- extended LUT mode                      ; 0     ;
+;     -- arithmetic mode                        ; 0     ;
+;     -- shared arithmetic mode                 ; 0     ;
+;                                               ;       ;
+; Estimated ALUT/register pairs used            ; 13    ;
+;                                               ;       ;
+; Total registers                               ; 0     ;
+;     -- Dedicated logic registers              ; 0     ;
+;     -- I/O registers                          ; 0     ;
+;                                               ;       ;
+; Estimated ALMs:  partially or completely used ; 7     ;
+;                                               ;       ;
+; I/O pins                                      ; 13    ;
+; Maximum fan-out node                          ; B[0]  ;
+; Maximum fan-out                               ; 5     ;
+; Total fan-out                                 ; 53    ;
+; Average fan-out                               ; 2.21  ;
++-----------------------------------------------+-------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,9 +211,14 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name           ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------+--------------+
-; |Somador_BCD               ; 2 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 13   ; 0            ; |Somador_BCD                  ; work         ;
-;    |IsOverflow:inst3|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Somador_BCD|IsOverflow:inst3 ;              ;
-;    |fulladder:inst13|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Somador_BCD|fulladder:inst13 ; work         ;
+; |Somador_BCD               ; 11 (1)            ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 13   ; 0            ; |Somador_BCD                  ; work         ;
+;    |IsOverflow:inst5|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Somador_BCD|IsOverflow:inst5 ;              ;
+;    |fulladder:inst12|      ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Somador_BCD|fulladder:inst12 ; work         ;
+;    |fulladder:inst13|      ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Somador_BCD|fulladder:inst13 ; work         ;
+;    |fulladder:inst14|      ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Somador_BCD|fulladder:inst14 ; work         ;
+;    |fulladder:inst15|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Somador_BCD|fulladder:inst15 ; work         ;
+;    |fulladder:inst16|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Somador_BCD|fulladder:inst16 ; work         ;
+;    |fulladder:inst17|      ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Somador_BCD|fulladder:inst17 ; work         ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -237,9 +242,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II Analysis & Synthesis
-    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed Apr 17 18:43:15 2019
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+    Info: Processing started: Mon Apr 29 16:26:34 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Soma_Subtrator -c Soma_Subtrator
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file comparador_maior_que.bdf
@@ -264,28 +269,20 @@ Info: Found 1 design units, including 1 entities, in source file isoverflow.bdf
     Info: Found entity 1: IsOverflow
 Info: Found 1 design units, including 1 entities, in source file somador_bcd.bdf
     Info: Found entity 1: Somador_BCD
+Info: Found 1 design units, including 1 entities, in source file vector_mux.bdf
+    Info: Found entity 1: Vector_MUX
 Info: Elaborating entity "Somador_BCD" for the top level hierarchy
-Info: Elaborating entity "IsOverflow" for hierarchy "IsOverflow:inst3"
+Info: Elaborating entity "IsOverflow" for hierarchy "IsOverflow:inst5"
 Warning: Using design file fulladder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: fulladder
 Info: Elaborating entity "FullAdder" for hierarchy "FullAdder:inst12"
-Warning: Output pins are stuck at VCC or GND
-    Warning (13410): Pin "S[3]" is stuck at GND
-    Warning (13410): Pin "S[1]" is stuck at GND
-Warning: Design contains 6 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "A[3]"
-    Warning (15610): No output dependent on input pin "A[2]"
-    Warning (15610): No output dependent on input pin "A[1]"
-    Warning (15610): No output dependent on input pin "B[3]"
-    Warning (15610): No output dependent on input pin "B[2]"
-    Warning (15610): No output dependent on input pin "B[1]"
-Info: Implemented 15 device resources after synthesis - the final resource count might be different
+Info: Implemented 24 device resources after synthesis - the final resource count might be different
     Info: Implemented 8 input pins
     Info: Implemented 5 output pins
-    Info: Implemented 2 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 278 megabytes
-    Info: Processing ended: Wed Apr 17 18:43:16 2019
+    Info: Implemented 11 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 344 megabytes
+    Info: Processing ended: Mon Apr 29 16:26:35 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

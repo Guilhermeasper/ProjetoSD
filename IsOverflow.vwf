@@ -147,27 +147,15 @@ TRANSITION_LIST("IsOverflow|output")
 		NODE
 		{
 			REPEAT = 62;
-			NODE
-			{
-				REPEAT = 2;
-				LEVEL 0 FOR 1.0;
-				LEVEL 1 FOR 1.0;
-			}
-			NODE
-			{
-				REPEAT = 3;
-				LEVEL 0 FOR 1.0;
-				LEVEL 1 FOR 3.0;
-			}
-		}
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 0 FOR 1.0;
+			LEVEL 0 FOR 3.0;
 			LEVEL 1 FOR 1.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 10.0;
 		}
-		LEVEL 0 FOR 1.0;
-		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
 	}
 }
 

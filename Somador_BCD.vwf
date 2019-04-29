@@ -256,11 +256,12 @@ TRANSITION_LIST("B[3]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 62;
-			LEVEL 0 FOR 8.0;
-			LEVEL 1 FOR 8.0;
+			REPEAT = 3;
+			LEVEL 0 FOR 128.0;
+			LEVEL 1 FOR 128.0;
 		}
-		LEVEL 0 FOR 8.0;
+		LEVEL 0 FOR 128.0;
+		LEVEL 1 FOR 104.0;
 	}
 }
 
@@ -271,10 +272,12 @@ TRANSITION_LIST("B[2]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 125;
-			LEVEL 0 FOR 4.0;
-			LEVEL 1 FOR 4.0;
+			REPEAT = 7;
+			LEVEL 0 FOR 64.0;
+			LEVEL 1 FOR 64.0;
 		}
+		LEVEL 0 FOR 64.0;
+		LEVEL 1 FOR 40.0;
 	}
 }
 
@@ -285,10 +288,12 @@ TRANSITION_LIST("B[1]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 250;
-			LEVEL 0 FOR 2.0;
-			LEVEL 1 FOR 2.0;
+			REPEAT = 15;
+			LEVEL 0 FOR 32.0;
+			LEVEL 1 FOR 32.0;
 		}
+		LEVEL 0 FOR 32.0;
+		LEVEL 1 FOR 8.0;
 	}
 }
 
@@ -299,10 +304,11 @@ TRANSITION_LIST("B[0]")
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 500;
-			LEVEL 0 FOR 1.0;
-			LEVEL 1 FOR 1.0;
+			REPEAT = 31;
+			LEVEL 0 FOR 16.0;
+			LEVEL 1 FOR 16.0;
 		}
+		LEVEL 0 FOR 8.0;
 	}
 }
 
@@ -311,12 +317,86 @@ TRANSITION_LIST("Overflow")
 	NODE
 	{
 		REPEAT = 1;
-		NODE
-		{
-			REPEAT = 500;
-			LEVEL 0 FOR 1.0;
-			LEVEL 1 FOR 1.0;
-		}
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 9.0;
+		LEVEL 1 FOR 7.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 7.0;
+		LEVEL 1 FOR 9.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 11.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 12.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 13.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 14.0;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 111.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 9.0;
+		LEVEL 1 FOR 7.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 7.0;
+		LEVEL 1 FOR 9.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 11.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 12.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 13.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 14.0;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 111.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 9.0;
+		LEVEL 1 FOR 7.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 7.0;
+		LEVEL 1 FOR 9.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 11.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 12.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 13.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 14.0;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 111.0;
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 6.0;
+		LEVEL 0 FOR 9.0;
+		LEVEL 1 FOR 7.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 8.0;
+		LEVEL 0 FOR 7.0;
+		LEVEL 1 FOR 9.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 11.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 12.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 13.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 14.0;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 87.0;
 	}
 }
 
@@ -325,7 +405,152 @@ TRANSITION_LIST("S[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 0 FOR 8.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 13.0;
+		}
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 8.0;
+			LEVEL 1 FOR 7.0;
+		}
+		LEVEL 0 FOR 8.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 8.0;
+			LEVEL 0 FOR 7.0;
+		}
+		LEVEL 1 FOR 8.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 13.0;
+			LEVEL 1 FOR 2.0;
+		}
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 8.0;
+			LEVEL 1 FOR 7.0;
+		}
+		LEVEL 0 FOR 8.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 8.0;
+			LEVEL 0 FOR 7.0;
+		}
+		LEVEL 1 FOR 8.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 13.0;
+			LEVEL 1 FOR 2.0;
+		}
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 8.0;
+			LEVEL 1 FOR 7.0;
+		}
+		LEVEL 0 FOR 8.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 1 FOR 8.0;
+			LEVEL 0 FOR 7.0;
+		}
+		LEVEL 1 FOR 8.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 13.0;
+			LEVEL 1 FOR 2.0;
+		}
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 8.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 1.0;
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 8.0;
+			LEVEL 1 FOR 7.0;
+		}
+		LEVEL 0 FOR 8.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 1 FOR 8.0;
+			LEVEL 0 FOR 7.0;
+		}
+		LEVEL 1 FOR 4.0;
 	}
 }
 
@@ -334,12 +559,251 @@ TRANSITION_LIST("S[2]")
 	NODE
 	{
 		REPEAT = 1;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 2.0;
 		NODE
 		{
-			REPEAT = 500;
+			REPEAT = 2;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 6.0;
+			LEVEL 1 FOR 4.0;
 			LEVEL 0 FOR 1.0;
+		}
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 6.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 4.0;
 			LEVEL 1 FOR 1.0;
 		}
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 3.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 3.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 4.0;
+		}
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 2.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 6.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 1.0;
+		}
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 6.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 1.0;
+		}
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 3.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 3.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 4.0;
+		}
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 2.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 6.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 1.0;
+		}
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 6.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 1.0;
+		}
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 3.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 3.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 4.0;
+		}
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 1.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 2.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 6.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 1.0;
+		}
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 3.0;
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 6.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 1.0;
+		}
+		LEVEL 0 FOR 6.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 5.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 3.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 3.0;
+			LEVEL 1 FOR 4.0;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 4.0;
+		}
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 4.0;
+		LEVEL 0 FOR 4.0;
 	}
 }
 
@@ -348,7 +812,404 @@ TRANSITION_LIST("S[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+		}
+		LEVEL 0 FOR 4.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 3.0;
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 3.0;
+		}
+		LEVEL 0 FOR 2.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 3.0;
+		}
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 4.0;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 3.0;
+		}
+		LEVEL 0 FOR 4.0;
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 5.0;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+		}
+		LEVEL 1 FOR 1.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 1.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 2.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 1.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 0 FOR 2.0;
+				LEVEL 1 FOR 2.0;
+			}
+		}
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 1.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 3.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 3.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 3.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 3.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 5.0;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+		}
+		LEVEL 1 FOR 1.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 1.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 2.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 1.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 0 FOR 2.0;
+				LEVEL 1 FOR 2.0;
+			}
+		}
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 1.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 3.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 3.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 3.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 3.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 5.0;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+		}
+		LEVEL 1 FOR 1.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 1.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 2.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 1.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 0 FOR 2.0;
+				LEVEL 1 FOR 2.0;
+			}
+		}
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 2.0;
+		LEVEL 0 FOR 1.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 3.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 3.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 3.0;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 3.0;
+			LEVEL 0 FOR 4.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 5.0;
+		}
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 2.0;
+			LEVEL 0 FOR 2.0;
+		}
+		LEVEL 1 FOR 1.0;
+		NODE
+		{
+			REPEAT = 4;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 1.0;
+			NODE
+			{
+				REPEAT = 3;
+				LEVEL 1 FOR 2.0;
+				LEVEL 0 FOR 2.0;
+			}
+			LEVEL 1 FOR 2.0;
+		}
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 1.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+		}
+		LEVEL 0 FOR 2.0;
+		LEVEL 1 FOR 1.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 2.0;
+			LEVEL 1 FOR 2.0;
+		}
 	}
 }
 
@@ -357,7 +1218,46 @@ TRANSITION_LIST("S[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 0 FOR 1.0;
+			LEVEL 1 FOR 1.0;
+		}
+		LEVEL 0 FOR 1.0;
+		NODE
+		{
+			REPEAT = 30;
+			LEVEL 1 FOR 2.0;
+			NODE
+			{
+				REPEAT = 7;
+				LEVEL 0 FOR 1.0;
+				LEVEL 1 FOR 1.0;
+			}
+			LEVEL 0 FOR 2.0;
+			NODE
+			{
+				REPEAT = 7;
+				LEVEL 1 FOR 1.0;
+				LEVEL 0 FOR 1.0;
+			}
+		}
+		LEVEL 1 FOR 2.0;
+		NODE
+		{
+			REPEAT = 7;
+			LEVEL 0 FOR 1.0;
+			LEVEL 1 FOR 1.0;
+		}
+		LEVEL 0 FOR 2.0;
+		NODE
+		{
+			REPEAT = 3;
+			LEVEL 1 FOR 1.0;
+			LEVEL 0 FOR 1.0;
+		}
+		LEVEL 1 FOR 1.0;
 	}
 }
 
@@ -365,7 +1265,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "A";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
 	CHILDREN = 1, 2, 3, 4;
@@ -375,7 +1275,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "A[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 1;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -385,7 +1285,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "A[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -395,7 +1295,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "A[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 3;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -405,7 +1305,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "A[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 4;
 	TREE_LEVEL = 1;
 	PARENT = 0;
@@ -415,7 +1315,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "B";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 5;
 	TREE_LEVEL = 0;
 	CHILDREN = 6, 7, 8, 9;
@@ -425,7 +1325,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "B[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 6;
 	TREE_LEVEL = 1;
 	PARENT = 5;
@@ -435,7 +1335,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "B[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 7;
 	TREE_LEVEL = 1;
 	PARENT = 5;
@@ -445,7 +1345,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "B[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
 	PARENT = 5;
@@ -455,7 +1355,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "B[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
 	PARENT = 5;
@@ -474,7 +1374,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "S";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 11;
 	TREE_LEVEL = 0;
 	CHILDREN = 12, 13, 14, 15;
@@ -484,7 +1384,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "S[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 12;
 	TREE_LEVEL = 1;
 	PARENT = 11;
@@ -494,7 +1394,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "S[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 13;
 	TREE_LEVEL = 1;
 	PARENT = 11;
@@ -504,7 +1404,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "S[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 14;
 	TREE_LEVEL = 1;
 	PARENT = 11;
@@ -514,7 +1414,7 @@ DISPLAY_LINE
 {
 	CHANNEL = "S[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Hexadecimal;
+	RADIX = Unsigned;
 	TREE_INDEX = 15;
 	TREE_LEVEL = 1;
 	PARENT = 11;

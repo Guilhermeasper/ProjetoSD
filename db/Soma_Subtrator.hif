@@ -1,5 +1,5 @@
-Quartus II
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+Quartus II 64-Bit
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
 7
 3700
 OFF
@@ -20,67 +20,10 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-Binary_MUX
-# storage
-db|Soma_Subtrator.(0).cnf
-db|Soma_Subtrator.(0).cnf
-# case_insensitive
-# source_file
-binary_mux.bdf
-6859964d2ee91bdbc3369467dd1a9e5
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-IsOverflow
-# storage
-db|Soma_Subtrator.(1).cnf
-db|Soma_Subtrator.(1).cnf
-# case_insensitive
-# source_file
-isoverflow.bdf
-e24d8cb4e9e9ae3ea7b84927989e44
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-IsOverflow:inst3
-}
-# macro_sequence
-
-# end
-# entity
-Somador_BCD
-# storage
-db|Soma_Subtrator.(2).cnf
-db|Soma_Subtrator.(2).cnf
-# case_insensitive
-# source_file
-somador_bcd.bdf
-67a09bcb37914edff0c7f6ac6208e67
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# hierarchies {
-|
-}
-# macro_sequence
-
-# end
-# entity
 FullAdder
 # storage
-db|Soma_Subtrator.(3).cnf
-db|Soma_Subtrator.(3).cnf
+db|Soma_Subtrator.(2).cnf
+db|Soma_Subtrator.(2).cnf
 # case_insensitive
 # source_file
 fulladder.bdf
@@ -97,6 +40,46 @@ fulladder:inst14
 fulladder:inst15
 fulladder:inst17
 fulladder:inst16
+}
+# macro_sequence
+
+# end
+# entity
+Somador_BCD
+# storage
+db|Soma_Subtrator.(0).cnf
+db|Soma_Subtrator.(0).cnf
+# case_insensitive
+# source_file
+somador_bcd.bdf
+51eadec6691e1b0a5fc28dde77e8ad
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+IsOverflow
+# storage
+db|Soma_Subtrator.(1).cnf
+db|Soma_Subtrator.(1).cnf
+# case_insensitive
+# source_file
+isoverflow.bdf
+bfb0f8bbc861b2d3a95a7af8a92f15b5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+IsOverflow:inst5
 }
 # macro_sequence
 
