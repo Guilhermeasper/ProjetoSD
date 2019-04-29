@@ -1240,10 +1240,10 @@ VECTOR("D:/Users/jvvm/Desktop/ProjetoSD/IsOverflow.vwf")
 VECTOR("D:/Users/jvvm/Desktop/ProjetoSD/Somador_BCD.vwf")
 {
 	ZOOM{
-		ZBEGIN = 24750;
-		ZEND = 93100;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
+		ZBEGIN = 937504;
+		ZEND = 1000000;
+		NUMERATOR = 1367;
+		DENOMINATOR = 62496;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -1377,6 +1377,81 @@ VECTOR("D:/Users/jvvm/Desktop/ProjetoSD/Somador_BCD.vwf")
 	LINE{
 		SIGNAL = "S[0]";
 		INDEX = 15;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+}
+
+VECTOR("D:/Users/jvvm/Desktop/ProjetoSD/binary_MUX.vwf")
+{
+	ZOOM{
+		ZBEGIN = 0;
+		ZEND = 1000000;
+		NUMERATOR = 20;
+		DENOMINATOR = 1000;
+		TOP_INDEX = 1;
+	}
+	CLOCK{
+		PERIOD = 10000;
+		OFFSET = 0;
+		DUTY_CYCLE = 50;
+	}
+	RANDOM_VALUE{
+		INTERVAL_TYPE = HALF_GRID;
+	}
+	LINE{
+		SIGNAL = "Comp_Igual";
+		INDEX = 0;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Comp_Maior";
+		INDEX = 1;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Comp_Menor";
+		INDEX = 2;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "S0";
+		INDEX = 3;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "S1";
+		INDEX = 4;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "S2";
+		INDEX = 5;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "output";
+		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

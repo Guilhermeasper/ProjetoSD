@@ -33,14 +33,6 @@ fulladder.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-fulladder:inst12
-fulladder:inst13
-fulladder:inst14
-fulladder:inst15
-fulladder:inst17
-fulladder:inst16
-}
 # macro_sequence
 
 # end
@@ -57,9 +49,6 @@ somador_bcd.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 
@@ -78,8 +67,25 @@ bfb0f8bbc861b2d3a95a7af8a92f15b5
 BLOCK_DESIGN_NAMING
 AUTO
 }
+# macro_sequence
+
+# end
+# entity
+Binary_MUX
+# storage
+db|Soma_Subtrator.(3).cnf
+db|Soma_Subtrator.(3).cnf
+# case_insensitive
+# source_file
+binary_mux.bdf
+6859964d2ee91bdbc3369467dd1a9e5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
 # hierarchies {
-IsOverflow:inst5
+|
 }
 # macro_sequence
 
