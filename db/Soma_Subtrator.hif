@@ -34,10 +34,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-MUX_3pra1:inst
-MUX_3pra1:inst4
-MUX_3pra1:inst5
-MUX_3pra1:inst6
+MUX_3pra1:inst1
 }
 # macro_sequence
 
@@ -56,9 +53,6 @@ ac36f3da79c863d84ec83aefa06084
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-|
-}
 # macro_sequence
 
 # end
@@ -70,11 +64,14 @@ db|Soma_Subtrator.(2).cnf
 # case_insensitive
 # source_file
 binary_mux.bdf
-28c1af25150b63a9d8096d426926d6a
+5348fea96b4341f8846c47a7fd86f44
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
+}
+# hierarchies {
+|
 }
 # macro_sequence
 

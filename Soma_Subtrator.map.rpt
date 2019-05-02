@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Soma_Subtrator
-Thu May 02 09:01:15 2019
+Thu May 02 09:11:05 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-------------------------------+----------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Thu May 02 09:01:15 2019        ;
+; Analysis & Synthesis Status   ; Successful - Thu May 02 09:11:05 2019        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; Soma_Subtrator                               ;
-; Top-level Entity Name         ; Vector_MUX                                   ;
+; Top-level Entity Name         ; Binary_MUX                                   ;
 ; Family                        ; Stratix II                                   ;
 ; Logic utilization             ; N/A                                          ;
-;     Combinational ALUTs       ; 4                                            ;
+;     Combinational ALUTs       ; 1                                            ;
 ;     Dedicated logic registers ; 0                                            ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 18                                           ;
+; Total pins                    ; 6                                            ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0                                            ;
 ; DSP block 9-bit elements      ; 0                                            ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; Vector_MUX         ; Soma_Subtrator     ;
+; Top-level entity name                                                      ; Binary_MUX         ; Soma_Subtrator     ;
 ; Family name                                                                ; Stratix II         ; Stratix II         ;
 ; Use Generated Physical Constraints File                                    ; Off                ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -160,49 +160,49 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                    ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------+
-; Vector_MUX.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alpvj/Desktop/ProjetoSD/Vector_MUX.bdf ;
+; Binary_MUX.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alpvj/Desktop/ProjetoSD/Binary_MUX.bdf ;
 ; MUX_3pra1.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/alpvj/Desktop/ProjetoSD/MUX_3pra1.bdf  ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------+
 
 
-+-------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary           ;
-+-----------------------------------------------+-------+
-; Resource                                      ; Usage ;
-+-----------------------------------------------+-------+
-; Estimated ALUTs Used                          ; 4     ;
-; Dedicated logic registers                     ; 0     ;
-;                                               ;       ;
-; Estimated ALUTs Unavailable                   ; 0     ;
-;                                               ;       ;
-; Total combinational functions                 ; 4     ;
-; Combinational ALUT usage by number of inputs  ;       ;
-;     -- 7 input functions                      ; 0     ;
-;     -- 6 input functions                      ; 0     ;
-;     -- 5 input functions                      ; 4     ;
-;     -- 4 input functions                      ; 0     ;
-;     -- <=3 input functions                    ; 0     ;
-;                                               ;       ;
-; Combinational ALUTs by mode                   ;       ;
-;     -- normal mode                            ; 4     ;
-;     -- extended LUT mode                      ; 0     ;
-;     -- arithmetic mode                        ; 0     ;
-;     -- shared arithmetic mode                 ; 0     ;
-;                                               ;       ;
-; Estimated ALUT/register pairs used            ; 4     ;
-;                                               ;       ;
-; Total registers                               ; 0     ;
-;     -- Dedicated logic registers              ; 0     ;
-;     -- I/O registers                          ; 0     ;
-;                                               ;       ;
-; Estimated ALMs:  partially or completely used ; 2     ;
-;                                               ;       ;
-; I/O pins                                      ; 18    ;
-; Maximum fan-out node                          ; S0    ;
-; Maximum fan-out                               ; 4     ;
-; Total fan-out                                 ; 24    ;
-; Average fan-out                               ; 1.09  ;
-+-----------------------------------------------+-------+
++------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                            ;
++-----------------------------------------------+------------------------+
+; Resource                                      ; Usage                  ;
++-----------------------------------------------+------------------------+
+; Estimated ALUTs Used                          ; 1                      ;
+; Dedicated logic registers                     ; 0                      ;
+;                                               ;                        ;
+; Estimated ALUTs Unavailable                   ; 0                      ;
+;                                               ;                        ;
+; Total combinational functions                 ; 1                      ;
+; Combinational ALUT usage by number of inputs  ;                        ;
+;     -- 7 input functions                      ; 0                      ;
+;     -- 6 input functions                      ; 0                      ;
+;     -- 5 input functions                      ; 1                      ;
+;     -- 4 input functions                      ; 0                      ;
+;     -- <=3 input functions                    ; 0                      ;
+;                                               ;                        ;
+; Combinational ALUTs by mode                   ;                        ;
+;     -- normal mode                            ; 1                      ;
+;     -- extended LUT mode                      ; 0                      ;
+;     -- arithmetic mode                        ; 0                      ;
+;     -- shared arithmetic mode                 ; 0                      ;
+;                                               ;                        ;
+; Estimated ALUT/register pairs used            ; 1                      ;
+;                                               ;                        ;
+; Total registers                               ; 0                      ;
+;     -- Dedicated logic registers              ; 0                      ;
+;     -- I/O registers                          ; 0                      ;
+;                                               ;                        ;
+; Estimated ALMs:  partially or completely used ; 1                      ;
+;                                               ;                        ;
+; I/O pins                                      ; 6                      ;
+; Maximum fan-out node                          ; MUX_3pra1:inst1|inst~0 ;
+; Maximum fan-out                               ; 1                      ;
+; Total fan-out                                 ; 6                      ;
+; Average fan-out                               ; 0.86                   ;
++-----------------------------------------------+------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -210,11 +210,8 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name         ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------+--------------+
-; |Vector_MUX                ; 4 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 18   ; 0            ; |Vector_MUX                 ; work         ;
-;    |MUX_3pra1:inst4|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Vector_MUX|MUX_3pra1:inst4 ; work         ;
-;    |MUX_3pra1:inst5|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Vector_MUX|MUX_3pra1:inst5 ; work         ;
-;    |MUX_3pra1:inst6|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Vector_MUX|MUX_3pra1:inst6 ; work         ;
-;    |MUX_3pra1:inst|        ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Vector_MUX|MUX_3pra1:inst  ;              ;
+; |Binary_MUX                ; 1 (0)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 6    ; 0            ; |Binary_MUX                 ; work         ;
+;    |MUX_3pra1:inst1|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |Binary_MUX|MUX_3pra1:inst1 ;              ;
 +----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -240,7 +237,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu May 02 09:01:14 2019
+    Info: Processing started: Thu May 02 09:11:04 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Soma_Subtrator -c Soma_Subtrator
 Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info: Found 1 design units, including 1 entities, in source file comparador_maior_que.bdf
@@ -269,15 +266,17 @@ Info: Found 1 design units, including 1 entities, in source file vector_mux.bdf
     Info: Found entity 1: Vector_MUX
 Info: Found 1 design units, including 1 entities, in source file mux_3pra1.bdf
     Info: Found entity 1: MUX_3pra1
-Info: Elaborating entity "Vector_MUX" for the top level hierarchy
-Info: Elaborating entity "MUX_3pra1" for hierarchy "MUX_3pra1:inst"
-Info: Implemented 22 device resources after synthesis - the final resource count might be different
-    Info: Implemented 14 input pins
-    Info: Implemented 4 output pins
-    Info: Implemented 4 logic cells
+Info: Found 1 design units, including 1 entities, in source file ula.bdf
+    Info: Found entity 1: ULA
+Info: Elaborating entity "Binary_MUX" for the top level hierarchy
+Info: Elaborating entity "MUX_3pra1" for hierarchy "MUX_3pra1:inst1"
+Info: Implemented 7 device resources after synthesis - the final resource count might be different
+    Info: Implemented 5 input pins
+    Info: Implemented 1 output pins
+    Info: Implemented 1 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 279 megabytes
-    Info: Processing ended: Thu May 02 09:01:15 2019
+    Info: Processing ended: Thu May 02 09:11:05 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

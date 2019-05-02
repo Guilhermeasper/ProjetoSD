@@ -1,5 +1,5 @@
 Flow report for Soma_Subtrator
-Thu May 02 09:01:27 2019
+Thu May 02 09:11:16 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +-------------------------------+----------------------------------------------+
-; Flow Status                   ; Successful - Thu May 02 09:01:27 2019        ;
+; Flow Status                   ; Successful - Thu May 02 09:11:16 2019        ;
 ; Quartus II Version            ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
 ; Revision Name                 ; Soma_Subtrator                               ;
-; Top-level Entity Name         ; Vector_MUX                                   ;
+; Top-level Entity Name         ; Binary_MUX                                   ;
 ; Family                        ; Stratix II                                   ;
 ; Met timing requirements       ; Yes                                          ;
 ; Logic utilization             ; < 1 %                                        ;
-;     Combinational ALUTs       ; 4 / 12,480 ( < 1 % )                         ;
+;     Combinational ALUTs       ; 1 / 12,480 ( < 1 % )                         ;
 ;     Dedicated logic registers ; 0 / 12,480 ( 0 % )                           ;
 ; Total registers               ; 0                                            ;
-; Total pins                    ; 18 / 343 ( 5 % )                             ;
+; Total pins                    ; 6 / 343 ( 2 % )                              ;
 ; Total virtual pins            ; 0                                            ;
 ; Total block memory bits       ; 0 / 419,328 ( 0 % )                          ;
 ; DSP block 9-bit elements      ; 0 / 96 ( 0 % )                               ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/02/2019 09:01:14 ;
+; Start date & time ; 05/02/2019 09:11:04 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Soma_Subtrator      ;
 +-------------------+---------------------+
@@ -75,10 +75,10 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------+----------------+-------------+----------------+
 ; Assignment Name                    ; Value                          ; Default Value  ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------+----------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 10995770589202.155679847412668 ; --             ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                       ; --             ; Vector_MUX  ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --             ; Vector_MUX  ; Top            ;
-; TOP_LEVEL_ENTITY                   ; Vector_MUX                     ; Soma_Subtrator ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 10995770589202.155679906405784 ; --             ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                       ; --             ; Binary_MUX  ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                         ; --             ; Binary_MUX  ; Top            ;
+; TOP_LEVEL_ENTITY                   ; Binary_MUX                     ; Soma_Subtrator ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                            ; --             ; --          ; eda_blast_fpga ;
 +------------------------------------+--------------------------------+----------------+-------------+----------------+
 
@@ -88,8 +88,8 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 277 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:05     ; 1.0                     ; 408 MB              ; 00:00:05                           ;
+; Analysis & Synthesis    ; 00:00:02     ; 1.0                     ; 277 MB              ; 00:00:01                           ;
+; Fitter                  ; 00:00:04     ; 1.0                     ; 407 MB              ; 00:00:05                           ;
 ; Assembler               ; 00:00:03     ; 1.0                     ; 293 MB              ; 00:00:02                           ;
 ; Classic Timing Analyzer ; 00:00:01     ; 1.0                     ; 223 MB              ; 00:00:00                           ;
 ; Total                   ; 00:00:10     ; --                      ; --                  ; 00:00:08                           ;
