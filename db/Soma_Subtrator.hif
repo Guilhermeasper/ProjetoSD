@@ -33,13 +33,6 @@ mux_3pra1.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ULA:inst|Binary_MUX:inst3|MUX_3pra1:inst1
-ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst
-ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst4
-ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst5
-ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6
-}
 # macro_sequence
 
 # end
@@ -56,9 +49,6 @@ ac36f3da79c863d84ec83aefa06084
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ULA:inst|Vector_MUX:inst13
 }
 # macro_sequence
 
@@ -77,9 +67,6 @@ binary_mux.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ULA:inst|Binary_MUX:inst3
-}
 # macro_sequence
 
 # end
@@ -96,9 +83,6 @@ ula.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ULA:inst
 }
 # macro_sequence
 
@@ -118,7 +102,7 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|Soma_Subtrator:inst8
+|
 }
 # macro_sequence
 
@@ -138,10 +122,10 @@ BLOCK_DESIGN_NAMING
 AUTO
 }
 # hierarchies {
-ULA:inst|Soma_Subtrator:inst8|fulladder:inst12
-ULA:inst|Soma_Subtrator:inst8|fulladder:inst10
-ULA:inst|Soma_Subtrator:inst8|fulladder:inst6
-ULA:inst|Soma_Subtrator:inst8|fulladder:inst7
+fulladder:inst12
+fulladder:inst10
+fulladder:inst6
+fulladder:inst7
 }
 # macro_sequence
 
@@ -160,10 +144,6 @@ b010a5ebebe8484d6f31eac3e360dc61
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ULA:inst|Comparador_Maior_que:inst6
-ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst
-}
 # macro_sequence
 
 # end
@@ -180,10 +160,6 @@ comparador_mais.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ULA:inst|Comparador_Maior_que:inst6|Comparador_Mais:inst
-ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Mais:inst
 }
 # macro_sequence
 
@@ -202,14 +178,6 @@ d2c7ed1ec782148ab9546a245931740
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst1
-ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst2
-ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst3
-ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst1
-ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst2
-ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst3
-}
 # macro_sequence
 
 # end
@@ -226,10 +194,6 @@ d08cefbdddf663c5d05f30411f47ca70
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ULA:inst|Comparador_Igual:inst7
-ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1
 }
 # macro_sequence
 
@@ -248,9 +212,6 @@ comparador_menor_que.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ULA:inst|Comparador_Menor_que:inst5
-}
 # macro_sequence
 
 # end
@@ -268,9 +229,6 @@ bc534f65a340779d89b6f86a8f81cf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-ULA:inst|Vector_XOR:inst10
-}
 # macro_sequence
 
 # end
@@ -287,9 +245,6 @@ vector_and.bdf
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-ULA:inst|Vector_AND:inst9
 }
 # macro_sequence
 
@@ -342,9 +297,6 @@ decodificador.bdf
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# hierarchies {
-Decodificador:inst1
-}
 # macro_sequence
 
 # end
@@ -361,9 +313,6 @@ e125c5f6e9bf31cd1a8ad328059ac
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
-}
-# hierarchies {
-|
 }
 # macro_sequence
 

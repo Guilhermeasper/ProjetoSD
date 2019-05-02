@@ -1,5 +1,5 @@
 Simulator report for Soma_Subtrator
-Thu May 02 19:55:20 2019
+Thu May 02 20:31:19 2019
 Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
@@ -45,41 +45,41 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 137 nodes    ;
-; Simulation Coverage         ;      91.97 % ;
-; Total Number of Transitions ; 11817        ;
+; Simulation Netlist Size     ; 39 nodes     ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 67632        ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Simulator Settings                                                                                                           ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
-; Option                                                                                     ; Setting         ; Default Value ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
-; Simulation mode                                                                            ; Functional      ; Timing        ;
-; Start time                                                                                 ; 0 ns            ; 0 ns          ;
-; Simulation results format                                                                  ; CVWF            ;               ;
-; Vector input source                                                                        ; ULA_Oficial.vwf ;               ;
-; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
-; Check outputs                                                                              ; Off             ; Off           ;
-; Report simulation coverage                                                                 ; On              ; On            ;
-; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
-; Display missing 1-value coverage report                                                    ; On              ; On            ;
-; Display missing 0-value coverage report                                                    ; On              ; On            ;
-; Detect setup and hold time violations                                                      ; Off             ; Off           ;
-; Detect glitches                                                                            ; Off             ; Off           ;
-; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
-; Generate Signal Activity File                                                              ; Off             ; Off           ;
-; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
-; Group bus channels in simulation results                                                   ; Off             ; Off           ;
-; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
-; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
-; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
-; Overwrite Waveform Inputs With Simulation Outputs                                          ; On              ;               ;
-; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
-+--------------------------------------------------------------------------------------------+-----------------+---------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                              ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Option                                                                                     ; Setting            ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
+; Simulation mode                                                                            ; Functional         ; Timing        ;
+; Start time                                                                                 ; 0 ns               ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF               ;               ;
+; Vector input source                                                                        ; Soma_Subtrator.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                 ; On            ;
+; Check outputs                                                                              ; Off                ; Off           ;
+; Report simulation coverage                                                                 ; On                 ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                 ; On            ;
+; Display missing 1-value coverage report                                                    ; On                 ; On            ;
+; Display missing 0-value coverage report                                                    ; On                 ; On            ;
+; Detect setup and hold time violations                                                      ; Off                ; Off           ;
+; Detect glitches                                                                            ; Off                ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                ; Off           ;
+; Generate Signal Activity File                                                              ; Off                ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                 ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE         ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                 ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto               ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------------+---------------+
 
 
 +----------------------+
@@ -94,188 +94,78 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      91.97 % ;
-; Total nodes checked                                 ; 137          ;
-; Total output ports checked                          ; 137          ;
-; Total output ports with complete 1/0-value coverage ; 126          ;
-; Total output ports with no 1/0-value coverage       ; 10           ;
-; Total output ports with no 1-value coverage         ; 10           ;
-; Total output ports with no 0-value coverage         ; 11           ;
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 39           ;
+; Total output ports checked                          ; 39           ;
+; Total output ports with complete 1/0-value coverage ; 39           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                                                                                                                                                                                          ;
-+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+
-; Node Name                                                                                               ; Output Port Name                                                                                        ; Output Port Type ;
-+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+
-; |ULA_Oficial|overflow                                                                                   ; |ULA_Oficial|overflow                                                                                   ; pin_out          ;
-; |ULA_Oficial|S0                                                                                         ; |ULA_Oficial|S0                                                                                         ; out              ;
-; |ULA_Oficial|S1                                                                                         ; |ULA_Oficial|S1                                                                                         ; out              ;
-; |ULA_Oficial|A[1]                                                                                       ; |ULA_Oficial|A[1]                                                                                       ; out              ;
-; |ULA_Oficial|A[0]                                                                                       ; |ULA_Oficial|A[0]                                                                                       ; out              ;
-; |ULA_Oficial|B[3]                                                                                       ; |ULA_Oficial|B[3]                                                                                       ; out              ;
-; |ULA_Oficial|B[2]                                                                                       ; |ULA_Oficial|B[2]                                                                                       ; out              ;
-; |ULA_Oficial|B[1]                                                                                       ; |ULA_Oficial|B[1]                                                                                       ; out              ;
-; |ULA_Oficial|B[0]                                                                                       ; |ULA_Oficial|B[0]                                                                                       ; out              ;
-; |ULA_Oficial|status                                                                                     ; |ULA_Oficial|status                                                                                     ; pin_out          ;
-; |ULA_Oficial|numero[6]                                                                                  ; |ULA_Oficial|numero[6]                                                                                  ; pin_out          ;
-; |ULA_Oficial|numero[5]                                                                                  ; |ULA_Oficial|numero[5]                                                                                  ; pin_out          ;
-; |ULA_Oficial|numero[4]                                                                                  ; |ULA_Oficial|numero[4]                                                                                  ; pin_out          ;
-; |ULA_Oficial|numero[3]                                                                                  ; |ULA_Oficial|numero[3]                                                                                  ; pin_out          ;
-; |ULA_Oficial|numero[2]                                                                                  ; |ULA_Oficial|numero[2]                                                                                  ; pin_out          ;
-; |ULA_Oficial|numero[1]                                                                                  ; |ULA_Oficial|numero[1]                                                                                  ; pin_out          ;
-; |ULA_Oficial|numero[0]                                                                                  ; |ULA_Oficial|numero[0]                                                                                  ; pin_out          ;
-; |ULA_Oficial|sinal[0]                                                                                   ; |ULA_Oficial|sinal[0]                                                                                   ; pin_out          ;
-; |ULA_Oficial|Decodificador:inst1|inst39                                                                 ; |ULA_Oficial|Decodificador:inst1|inst39                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst5                                                                  ; |ULA_Oficial|Decodificador:inst1|inst5                                                                  ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst6                                                                  ; |ULA_Oficial|Decodificador:inst1|inst6                                                                  ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst7                                                                  ; |ULA_Oficial|Decodificador:inst1|inst7                                                                  ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst40                                                                 ; |ULA_Oficial|Decodificador:inst1|inst40                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst22                                                                 ; |ULA_Oficial|Decodificador:inst1|inst22                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst24                                                                 ; |ULA_Oficial|Decodificador:inst1|inst24                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst23                                                                 ; |ULA_Oficial|Decodificador:inst1|inst23                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst25                                                                 ; |ULA_Oficial|Decodificador:inst1|inst25                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst26                                                                 ; |ULA_Oficial|Decodificador:inst1|inst26                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst35                                                                 ; |ULA_Oficial|Decodificador:inst1|inst35                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst20                                                                 ; |ULA_Oficial|Decodificador:inst1|inst20                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst37                                                                 ; |ULA_Oficial|Decodificador:inst1|inst37                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst16                                                                 ; |ULA_Oficial|Decodificador:inst1|inst16                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst17                                                                 ; |ULA_Oficial|Decodificador:inst1|inst17                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst18                                                                 ; |ULA_Oficial|Decodificador:inst1|inst18                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst36                                                                 ; |ULA_Oficial|Decodificador:inst1|inst36                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst30                                                                 ; |ULA_Oficial|Decodificador:inst1|inst30                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst31                                                                 ; |ULA_Oficial|Decodificador:inst1|inst31                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst32                                                                 ; |ULA_Oficial|Decodificador:inst1|inst32                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst38                                                                 ; |ULA_Oficial|Decodificador:inst1|inst38                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst9                                                                  ; |ULA_Oficial|Decodificador:inst1|inst9                                                                  ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst10                                                                 ; |ULA_Oficial|Decodificador:inst1|inst10                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst11                                                                 ; |ULA_Oficial|Decodificador:inst1|inst11                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst34                                                                 ; |ULA_Oficial|Decodificador:inst1|inst34                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst14                                                                 ; |ULA_Oficial|Decodificador:inst1|inst14                                                                 ; out0             ;
-; |ULA_Oficial|Decodificador:inst1|inst13                                                                 ; |ULA_Oficial|Decodificador:inst1|inst13                                                                 ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_AND:inst9|inst1                                                            ; |ULA_Oficial|ULA:inst|Vector_AND:inst9|inst1                                                            ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_AND:inst9|inst2                                                            ; |ULA_Oficial|ULA:inst|Vector_AND:inst9|inst2                                                            ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_AND:inst9|inst3                                                            ; |ULA_Oficial|ULA:inst|Vector_AND:inst9|inst3                                                            ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_XOR:inst10|inst                                                            ; |ULA_Oficial|ULA:inst|Vector_XOR:inst10|inst                                                            ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_XOR:inst10|inst1                                                           ; |ULA_Oficial|ULA:inst|Vector_XOR:inst10|inst1                                                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_XOR:inst10|inst2                                                           ; |ULA_Oficial|ULA:inst|Vector_XOR:inst10|inst2                                                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_XOR:inst10|inst3                                                           ; |ULA_Oficial|ULA:inst|Vector_XOR:inst10|inst3                                                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6|inst                                            ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6|inst                                            ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6|00                                              ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6|00                                              ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6|10                                              ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6|10                                              ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst5|inst                                            ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst5|inst                                            ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst5|00                                              ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst5|00                                              ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst5|10                                              ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst5|10                                              ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst5|01                                              ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst5|01                                              ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst4|inst                                            ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst4|inst                                            ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst4|00                                              ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst4|00                                              ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst4|10                                              ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst4|10                                              ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst4|01                                              ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst4|01                                              ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst|inst                                             ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst|inst                                             ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst|00                                               ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst|00                                               ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst|10                                               ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst|10                                               ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst|01                                               ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst|01                                               ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|inst4                                                  ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|inst4                                                  ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst3|inst4 ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst3|inst4 ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst2|inst6 ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst2|inst6 ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst2|inst4 ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst2|inst4 ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst2|inst5 ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst2|inst5 ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst2|inst3 ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst2|inst3 ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst1|inst6 ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst1|inst6 ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst1|inst4 ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst1|inst4 ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst1|inst5 ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst1|inst5 ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst1|inst3 ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Menos:inst1|inst3 ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Mais:inst|inst6   ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Mais:inst|inst6   ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Mais:inst|inst4   ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Mais:inst|inst4   ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Mais:inst|inst5   ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Mais:inst|inst5   ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Mais:inst|inst3   ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Maior_que:inst|Comparador_Mais:inst|inst3   ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1|inst5                           ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1|inst5                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1|inst3                           ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1|inst3                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1|inst1                           ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1|inst1                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1|inst2                           ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1|inst2                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1|inst                            ; |ULA_Oficial|ULA:inst|Comparador_Menor_que:inst5|Comparador_Igual:inst1|inst                            ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Igual:inst7|inst5                                                      ; |ULA_Oficial|ULA:inst|Comparador_Igual:inst7|inst5                                                      ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Igual:inst7|inst3                                                      ; |ULA_Oficial|ULA:inst|Comparador_Igual:inst7|inst3                                                      ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Igual:inst7|inst1                                                      ; |ULA_Oficial|ULA:inst|Comparador_Igual:inst7|inst1                                                      ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Igual:inst7|inst2                                                      ; |ULA_Oficial|ULA:inst|Comparador_Igual:inst7|inst2                                                      ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Igual:inst7|inst                                                       ; |ULA_Oficial|ULA:inst|Comparador_Igual:inst7|inst                                                       ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst3|inst4                           ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst3|inst4                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst2|inst6                           ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst2|inst6                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst2|inst4                           ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst2|inst4                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst2|inst5                           ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst2|inst5                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst2|inst3                           ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst2|inst3                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst1|inst6                           ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst1|inst6                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst1|inst4                           ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst1|inst4                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst1|inst5                           ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst1|inst5                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst1|inst3                           ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Menos:inst1|inst3                           ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Mais:inst|inst6                             ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Mais:inst|inst6                             ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Mais:inst|inst4                             ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Mais:inst|inst4                             ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Mais:inst|inst5                             ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Mais:inst|inst5                             ; out0             ;
-; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Mais:inst|inst3                             ; |ULA_Oficial|ULA:inst|Comparador_Maior_que:inst6|Comparador_Mais:inst|inst3                             ; out0             ;
-; |ULA_Oficial|ULA:inst|Binary_MUX:inst3|MUX_3pra1:inst1|inst                                             ; |ULA_Oficial|ULA:inst|Binary_MUX:inst3|MUX_3pra1:inst1|inst                                             ; out0             ;
-; |ULA_Oficial|ULA:inst|Binary_MUX:inst3|MUX_3pra1:inst1|00                                               ; |ULA_Oficial|ULA:inst|Binary_MUX:inst3|MUX_3pra1:inst1|00                                               ; out0             ;
-; |ULA_Oficial|ULA:inst|Binary_MUX:inst3|MUX_3pra1:inst1|10                                               ; |ULA_Oficial|ULA:inst|Binary_MUX:inst3|MUX_3pra1:inst1|10                                               ; out0             ;
-; |ULA_Oficial|ULA:inst|Binary_MUX:inst3|MUX_3pra1:inst1|01                                               ; |ULA_Oficial|ULA:inst|Binary_MUX:inst3|MUX_3pra1:inst1|01                                               ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|inst14                                                       ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|inst14                                                       ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst7|inst                                         ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst7|inst                                         ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst7|inst8                                        ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst7|inst8                                        ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst7|inst6                                        ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst7|inst6                                        ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst6|inst3                                        ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst6|inst3                                        ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst6|inst                                         ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst6|inst                                         ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst6|inst8                                        ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst6|inst8                                        ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst6|inst6                                        ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst6|inst6                                        ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst6|inst4                                        ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst6|inst4                                        ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst10|inst3                                       ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst10|inst3                                       ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst10|inst                                        ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst10|inst                                        ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst10|inst8                                       ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst10|inst8                                       ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst10|inst6                                       ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst10|inst6                                       ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst10|inst4                                       ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst10|inst4                                       ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst3                                       ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst3                                       ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst                                        ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst                                        ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst8                                       ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst8                                       ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst4                                       ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst4                                       ; out0             ;
-+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+
++----------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                        ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |Soma_Subtrator|Overflow               ; |Soma_Subtrator|Overflow               ; pin_out          ;
+; |Soma_Subtrator|inst14                 ; |Soma_Subtrator|inst14                 ; out0             ;
+; |Soma_Subtrator|A[3]                   ; |Soma_Subtrator|A[3]                   ; out              ;
+; |Soma_Subtrator|A[2]                   ; |Soma_Subtrator|A[2]                   ; out              ;
+; |Soma_Subtrator|A[1]                   ; |Soma_Subtrator|A[1]                   ; out              ;
+; |Soma_Subtrator|A[0]                   ; |Soma_Subtrator|A[0]                   ; out              ;
+; |Soma_Subtrator|inst13                 ; |Soma_Subtrator|inst13                 ; out0             ;
+; |Soma_Subtrator|B[3]                   ; |Soma_Subtrator|B[3]                   ; out              ;
+; |Soma_Subtrator|B[2]                   ; |Soma_Subtrator|B[2]                   ; out              ;
+; |Soma_Subtrator|B[1]                   ; |Soma_Subtrator|B[1]                   ; out              ;
+; |Soma_Subtrator|B[0]                   ; |Soma_Subtrator|B[0]                   ; out              ;
+; |Soma_Subtrator|Selector               ; |Soma_Subtrator|Selector               ; out              ;
+; |Soma_Subtrator|inst11                 ; |Soma_Subtrator|inst11                 ; out0             ;
+; |Soma_Subtrator|inst8                  ; |Soma_Subtrator|inst8                  ; out0             ;
+; |Soma_Subtrator|inst9                  ; |Soma_Subtrator|inst9                  ; out0             ;
+; |Soma_Subtrator|S[3]                   ; |Soma_Subtrator|S[3]                   ; pin_out          ;
+; |Soma_Subtrator|S[2]                   ; |Soma_Subtrator|S[2]                   ; pin_out          ;
+; |Soma_Subtrator|S[1]                   ; |Soma_Subtrator|S[1]                   ; pin_out          ;
+; |Soma_Subtrator|S[0]                   ; |Soma_Subtrator|S[0]                   ; pin_out          ;
+; |Soma_Subtrator|fulladder:inst7|inst3  ; |Soma_Subtrator|fulladder:inst7|inst3  ; out0             ;
+; |Soma_Subtrator|fulladder:inst7|inst   ; |Soma_Subtrator|fulladder:inst7|inst   ; out0             ;
+; |Soma_Subtrator|fulladder:inst7|inst8  ; |Soma_Subtrator|fulladder:inst7|inst8  ; out0             ;
+; |Soma_Subtrator|fulladder:inst7|inst6  ; |Soma_Subtrator|fulladder:inst7|inst6  ; out0             ;
+; |Soma_Subtrator|fulladder:inst7|inst4  ; |Soma_Subtrator|fulladder:inst7|inst4  ; out0             ;
+; |Soma_Subtrator|fulladder:inst6|inst3  ; |Soma_Subtrator|fulladder:inst6|inst3  ; out0             ;
+; |Soma_Subtrator|fulladder:inst6|inst   ; |Soma_Subtrator|fulladder:inst6|inst   ; out0             ;
+; |Soma_Subtrator|fulladder:inst6|inst8  ; |Soma_Subtrator|fulladder:inst6|inst8  ; out0             ;
+; |Soma_Subtrator|fulladder:inst6|inst6  ; |Soma_Subtrator|fulladder:inst6|inst6  ; out0             ;
+; |Soma_Subtrator|fulladder:inst6|inst4  ; |Soma_Subtrator|fulladder:inst6|inst4  ; out0             ;
+; |Soma_Subtrator|fulladder:inst10|inst3 ; |Soma_Subtrator|fulladder:inst10|inst3 ; out0             ;
+; |Soma_Subtrator|fulladder:inst10|inst  ; |Soma_Subtrator|fulladder:inst10|inst  ; out0             ;
+; |Soma_Subtrator|fulladder:inst10|inst8 ; |Soma_Subtrator|fulladder:inst10|inst8 ; out0             ;
+; |Soma_Subtrator|fulladder:inst10|inst6 ; |Soma_Subtrator|fulladder:inst10|inst6 ; out0             ;
+; |Soma_Subtrator|fulladder:inst10|inst4 ; |Soma_Subtrator|fulladder:inst10|inst4 ; out0             ;
+; |Soma_Subtrator|fulladder:inst12|inst3 ; |Soma_Subtrator|fulladder:inst12|inst3 ; out0             ;
+; |Soma_Subtrator|fulladder:inst12|inst  ; |Soma_Subtrator|fulladder:inst12|inst  ; out0             ;
+; |Soma_Subtrator|fulladder:inst12|inst8 ; |Soma_Subtrator|fulladder:inst12|inst8 ; out0             ;
+; |Soma_Subtrator|fulladder:inst12|inst6 ; |Soma_Subtrator|fulladder:inst12|inst6 ; out0             ;
+; |Soma_Subtrator|fulladder:inst12|inst4 ; |Soma_Subtrator|fulladder:inst12|inst4 ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                                                 ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
-; Node Name                                                         ; Output Port Name                                                  ; Output Port Type ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
-; |ULA_Oficial|A[3]                                                 ; |ULA_Oficial|A[3]                                                 ; out              ;
-; |ULA_Oficial|sinal[6]                                             ; |ULA_Oficial|sinal[6]                                             ; pin_out          ;
-; |ULA_Oficial|sinal[5]                                             ; |ULA_Oficial|sinal[5]                                             ; pin_out          ;
-; |ULA_Oficial|sinal[4]                                             ; |ULA_Oficial|sinal[4]                                             ; pin_out          ;
-; |ULA_Oficial|sinal[3]                                             ; |ULA_Oficial|sinal[3]                                             ; pin_out          ;
-; |ULA_Oficial|sinal[2]                                             ; |ULA_Oficial|sinal[2]                                             ; pin_out          ;
-; |ULA_Oficial|sinal[1]                                             ; |ULA_Oficial|sinal[1]                                             ; pin_out          ;
-; |ULA_Oficial|ULA:inst|Vector_AND:inst9|inst                       ; |ULA_Oficial|ULA:inst|Vector_AND:inst9|inst                       ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6|01        ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6|01        ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst6 ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst6 ; out0             ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                                                 ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
-; Node Name                                                         ; Output Port Name                                                  ; Output Port Type ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
-; |ULA_Oficial|A[3]                                                 ; |ULA_Oficial|A[3]                                                 ; out              ;
-; |ULA_Oficial|A[2]                                                 ; |ULA_Oficial|A[2]                                                 ; out              ;
-; |ULA_Oficial|sinal[6]                                             ; |ULA_Oficial|sinal[6]                                             ; pin_out          ;
-; |ULA_Oficial|sinal[5]                                             ; |ULA_Oficial|sinal[5]                                             ; pin_out          ;
-; |ULA_Oficial|sinal[4]                                             ; |ULA_Oficial|sinal[4]                                             ; pin_out          ;
-; |ULA_Oficial|sinal[3]                                             ; |ULA_Oficial|sinal[3]                                             ; pin_out          ;
-; |ULA_Oficial|sinal[2]                                             ; |ULA_Oficial|sinal[2]                                             ; pin_out          ;
-; |ULA_Oficial|sinal[1]                                             ; |ULA_Oficial|sinal[1]                                             ; pin_out          ;
-; |ULA_Oficial|ULA:inst|Vector_AND:inst9|inst                       ; |ULA_Oficial|ULA:inst|Vector_AND:inst9|inst                       ; out0             ;
-; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6|01        ; |ULA_Oficial|ULA:inst|Vector_MUX:inst13|MUX_3pra1:inst6|01        ; out0             ;
-; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst6 ; |ULA_Oficial|ULA:inst|Soma_Subtrator:inst8|fulladder:inst12|inst6 ; out0             ;
-+-------------------------------------------------------------------+-------------------------------------------------------------------+------------------+
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 +---------------------+
@@ -291,21 +181,21 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-    Info: Processing started: Thu May 02 19:55:19 2019
+    Info: Processing started: Thu May 02 20:31:19 2019
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Soma_Subtrator -c Soma_Subtrator
-Info: Using vector source file "C:/Users/alpvj/Desktop/Proj/ProjetoSD/ULA_Oficial.vwf"
+Info: Using vector source file "C:/Users/alpvj/Desktop/projetoo/ProjetoSD/Soma_Subtrator.vwf"
 Info: Overwriting simulation input file with simulation results
-    Info: A backup of ULA_Oficial.vwf called Soma_Subtrator.sim_ori.vwf has been created in the db folder
+    Info: A backup of Soma_Subtrator.vwf called Soma_Subtrator.sim_ori.vwf has been created in the db folder
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      91.97 %
-Info: Number of transitions in simulation is 11817
-Info: Vector file ULA_Oficial.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Simulation coverage is     100.00 %
+Info: Number of transitions in simulation is 67632
+Info: Vector file Soma_Subtrator.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 205 megabytes
-    Info: Processing ended: Thu May 02 19:55:20 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Processing ended: Thu May 02 20:31:19 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
