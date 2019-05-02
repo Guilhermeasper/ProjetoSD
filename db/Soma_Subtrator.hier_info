@@ -1,12 +1,87 @@
-|Binary_MUX
-output <= inst8.DB_MAX_OUTPUT_PORT_TYPE
-Comp_Maior => inst5.IN0
-S0 => inst.IN0
-S1 => inst2.IN0
-S1 => inst7.IN2
-S2 => inst3.IN0
-S2 => inst6.IN3
-Comp_Igual => inst6.IN0
-Comp_Menor => inst7.IN0
+|Vector_MUX
+R[0] <= MUX_3pra1:inst.output
+R[1] <= MUX_3pra1:inst4.output
+R[2] <= MUX_3pra1:inst5.output
+R[3] <= MUX_3pra1:inst6.output
+A[0] => MUX_3pra1:inst.A
+A[1] => MUX_3pra1:inst4.A
+A[2] => MUX_3pra1:inst5.A
+A[3] => MUX_3pra1:inst6.A
+B[0] => MUX_3pra1:inst.B
+B[1] => MUX_3pra1:inst4.B
+B[2] => MUX_3pra1:inst5.B
+B[3] => MUX_3pra1:inst6.B
+C[0] => MUX_3pra1:inst.C
+C[1] => MUX_3pra1:inst4.C
+C[2] => MUX_3pra1:inst5.C
+C[3] => MUX_3pra1:inst6.C
+S0 => MUX_3pra1:inst.S0
+S0 => MUX_3pra1:inst4.S0
+S0 => MUX_3pra1:inst5.S0
+S0 => MUX_3pra1:inst6.S0
+S1 => MUX_3pra1:inst.S1
+S1 => MUX_3pra1:inst4.S1
+S1 => MUX_3pra1:inst5.S1
+S1 => MUX_3pra1:inst6.S1
+
+
+|Vector_MUX|MUX_3pra1:inst
+output <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => 00.IN0
+S0 => inst10.IN0
+S0 => 10.IN1
+S0 => 11.IN1
+S1 => inst12.IN0
+S1 => inst11.IN0
+S1 => 11.IN2
+S1 => 01.IN2
+C => 10.IN0
+D => 11.IN0
+B => 01.IN0
+
+
+|Vector_MUX|MUX_3pra1:inst4
+output <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => 00.IN0
+S0 => inst10.IN0
+S0 => 10.IN1
+S0 => 11.IN1
+S1 => inst12.IN0
+S1 => inst11.IN0
+S1 => 11.IN2
+S1 => 01.IN2
+C => 10.IN0
+D => 11.IN0
+B => 01.IN0
+
+
+|Vector_MUX|MUX_3pra1:inst5
+output <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => 00.IN0
+S0 => inst10.IN0
+S0 => 10.IN1
+S0 => 11.IN1
+S1 => inst12.IN0
+S1 => inst11.IN0
+S1 => 11.IN2
+S1 => 01.IN2
+C => 10.IN0
+D => 11.IN0
+B => 01.IN0
+
+
+|Vector_MUX|MUX_3pra1:inst6
+output <= inst.DB_MAX_OUTPUT_PORT_TYPE
+A => 00.IN0
+S0 => inst10.IN0
+S0 => 10.IN1
+S0 => 11.IN1
+S1 => inst12.IN0
+S1 => inst11.IN0
+S1 => 11.IN2
+S1 => 01.IN2
+C => 10.IN0
+D => 11.IN0
+B => 01.IN0
 
 

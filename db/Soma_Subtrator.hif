@@ -1,5 +1,5 @@
-Quartus II 64-Bit
-Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Full Version
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 7
 3700
 OFF
@@ -20,65 +20,37 @@ VHSM_ON
 -- Start VHDL Libraries --
 -- End VHDL Libraries --
 # entity
-FullAdder
-# storage
-db|Soma_Subtrator.(2).cnf
-db|Soma_Subtrator.(2).cnf
-# case_insensitive
-# source_file
-fulladder.bdf
-95b6cbb70e2f314378f77132c155d
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
-}
-# macro_sequence
-
-# end
-# entity
-Somador_BCD
+MUX_3pra1
 # storage
 db|Soma_Subtrator.(0).cnf
 db|Soma_Subtrator.(0).cnf
 # case_insensitive
 # source_file
-somador_bcd.bdf
-51eadec6691e1b0a5fc28dde77e8ad
+mux_3pra1.bdf
+91798d9a631a60e04b7bdd9342fddf29
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
 AUTO
 }
-# macro_sequence
-
-# end
-# entity
-IsOverflow
-# storage
-db|Soma_Subtrator.(1).cnf
-db|Soma_Subtrator.(1).cnf
-# case_insensitive
-# source_file
-isoverflow.bdf
-bfb0f8bbc861b2d3a95a7af8a92f15b5
-26
-# internal_option {
-BLOCK_DESIGN_NAMING
-AUTO
+# hierarchies {
+MUX_3pra1:inst
+MUX_3pra1:inst4
+MUX_3pra1:inst5
+MUX_3pra1:inst6
 }
 # macro_sequence
 
 # end
 # entity
-Binary_MUX
+Vector_MUX
 # storage
-db|Soma_Subtrator.(3).cnf
-db|Soma_Subtrator.(3).cnf
+db|Soma_Subtrator.(1).cnf
+db|Soma_Subtrator.(1).cnf
 # case_insensitive
 # source_file
-binary_mux.bdf
-6859964d2ee91bdbc3369467dd1a9e5
+vector_mux.bdf
+ac36f3da79c863d84ec83aefa06084
 26
 # internal_option {
 BLOCK_DESIGN_NAMING
@@ -86,6 +58,23 @@ AUTO
 }
 # hierarchies {
 |
+}
+# macro_sequence
+
+# end
+# entity
+Binary_MUX
+# storage
+db|Soma_Subtrator.(2).cnf
+db|Soma_Subtrator.(2).cnf
+# case_insensitive
+# source_file
+binary_mux.bdf
+28c1af25150b63a9d8096d426926d6a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
 }
 # macro_sequence
 
